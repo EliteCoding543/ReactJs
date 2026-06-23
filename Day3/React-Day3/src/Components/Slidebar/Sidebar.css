@@ -1,0 +1,39 @@
+.sidebar{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+
+}
+
+.left{
+    width: 40vw;
+    background: rgb(242, 241, 242);
+    font-size: 20px;
+    line-height: 2.3;
+    height: 80vh;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.right{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 60vw;
+    border: 2px solid black;
+    padding: 10px;
+    height: 80vh;
+}
+
+.card{
+    width: 260px;
+    height: 260px;
+    background: #a6a5a7;
+    border: 1px solid black;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
