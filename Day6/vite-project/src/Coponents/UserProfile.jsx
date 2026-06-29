@@ -25,17 +25,17 @@ const UserProfile = () => {
 
             <p className="text-gray-500">@{item.username}</p>
 
-            <div className="mt-4">
+            <div className="mt-4 flex gap-3">
               <p className="font-semibold">📧 Email</p>
               <p>{item.email}</p>
             </div>
 
-            <div className="mt-3">
+            <div className="mt-3 flex gap-3">
               <p className="font-semibold">📞 Phone</p>
               <p>{item.phone}</p>
             </div>
 
-            <div className="mt-3">
+            <div className="mt-3 flex gap-3">
               <p className="font-semibold">🌐 Website</p>
               <a
                 href={`https://${item.website}`}
