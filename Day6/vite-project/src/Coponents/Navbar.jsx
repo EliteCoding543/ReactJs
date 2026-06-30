@@ -2,17 +2,17 @@ import React from "react";
 import E_logo from "../assets/E-logo.webp";
 
 const navItems = [
-  "Home",
-  "Products",
-  "Categories",
-  "About",
-  "Contact",
-  "Cart",
+    "Home",
+    "Products",
+    "Categories",
+    "About",
+    "Contact",
+    "Cart",
 ];
 
 const Navbar = () => {
   return (
-    <header className="flex justify-between items-center px-8 py-3 shadow-2xl cursor-pointer">
+    <header className="flex justify-between items-center px-20 py-3 shadow-2xl cursor-pointer">
       <img className="w-15" src={E_logo} alt="E-Commerce Logo" />
 
       <nav>

@@ -43,7 +43,9 @@ const Products = () => {
       ))
 
 
-      : "Please wait Loading..." 
+      : <h1 className="text-center text-2xl font-bold mt-10">
+        Please Wait Data Loading...
+        </h1>
      
       
     }

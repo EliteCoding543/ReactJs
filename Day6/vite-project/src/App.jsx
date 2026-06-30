@@ -3,9 +3,11 @@ import HarryApi from './Coponents/HarryApi';
 import Products from './Coponents/Products';
 import Navbar from './Coponents/Navbar';
 import UserProfile from './Coponents/UserProfile'
+import Apple from './Coponents/Apple';
 
 const App = () => {
  const [count , setCount] = useState(0);
+ const [show, setShow] = useState(true)
 
   return (
     <>
@@ -38,9 +40,13 @@ const App = () => {
     </div>
   </div> */}
     {/* <HarryApi /> */}
-    <Navbar />
-    <Products />
+    {/* <Navbar />
+    <Products /> */}
     {/* <UserProfile /> */}
+    <button onClick={() => {
+      setShow(!show)
+    }}>Toggle</button>
+    {show && <Apple />}
   </>
 );
 }
