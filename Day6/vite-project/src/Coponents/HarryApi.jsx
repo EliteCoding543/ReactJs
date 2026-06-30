@@ -19,9 +19,9 @@ const HarryApi = () => {
 
       <div className="grid grid-cols-3 gap-4 p-10">
         {data.map((item) => (
-          <div className="shadow-2xl w-90" key={item.name}>
+          <div className="shadow-2xl w-60" key={item.name}>
             <h1 className="font-bold">{item.name}</h1>
-            <img className="object-cover w-90" src={item.image} alt={item.name}/>
+            <img className="object-cover w-60" src={item.image} alt={item.name}/>
           </div>
         ))}
       </div>

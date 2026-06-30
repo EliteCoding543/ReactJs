@@ -39,8 +39,8 @@ const App = () => {
   </div> */}
     {/* <HarryApi /> */}
     <Navbar />
-    {/* <Products /> */}
-    <UserProfile />
+    <Products />
+    {/* <UserProfile /> */}
   </>
 );
 }
