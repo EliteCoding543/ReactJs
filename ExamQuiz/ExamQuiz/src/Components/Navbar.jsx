@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { SlBookOpen } from "react-icons/sl";
 import { RiMenu2Fill } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
@@ -7,9 +7,10 @@ import { CiDark } from "react-icons/ci";
 import { MdOutlineLightMode } from "react-icons/md";
 import Profile from '../assets/Profile.png'
 
-const Navbar = () => {
+const Navbar = ({ isOpen, setIsOpen }) => {
+
   return (
-    <header className="flex items-center justify-around bg-white px-6 py-4 border border-slate-200 shadow-sm">
+    <header className="relative flex items-center justify-around bg-white px-6 py-4 border border-slate-200 shadow-sm">
 
       {/* Left Section */}
       <div className="flex items-center">
@@ -25,7 +26,10 @@ const Navbar = () => {
         </div>
       </div>
         {/* Menu */}
-        <RiMenu2Fill className="ml-6 text-2xl text-slate-700 cursor-pointer hover:text-blue-600 transition" />
+       <RiMenu2Fill
+        onClick={() => setIsOpen(!isOpen)}
+        className="ml-6 text-2xl cursor-pointer hover:text-blue-600 transition"
+      />
 
         {/* Search */}
         <div className="relative ml-6">
