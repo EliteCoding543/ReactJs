@@ -6,6 +6,7 @@ import { IoMdNotificationsOutline } from "react-icons/io";
 import { CiDark } from "react-icons/ci";
 import { MdOutlineLightMode } from "react-icons/md";
 import Profile from '../assets/Profile.png'
+import { GiFairyWings } from "react-icons/gi";
 
 const Navbar = ({ isOpen, setIsOpen }) => {
 
@@ -69,7 +70,10 @@ const Navbar = ({ isOpen, setIsOpen }) => {
          <img className="w-12 h-12 bg-slate-300 rounded-full" src={Profile} alt="" />
           <div>
             <h5 className="font-medium">Shubham Kashyap</h5>
-            <p className="text-xs">Premium member</p>
+            <div className="flex gap-1 items-center">
+              <GiFairyWings className="text-amber-600" />
+              <p className="text-xs">Premium member</p>
+            </div>
           </div>
        </div>
     </header>

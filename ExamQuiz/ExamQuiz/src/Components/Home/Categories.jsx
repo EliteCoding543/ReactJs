@@ -33,7 +33,7 @@ const Categories = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center rounded-2xl bg-green-50 p-6 leading-8">
-                <BsBank2 className="text-4xl text-green-500" />
+                <BsBank2 className="text-4xl text-green-700" />
                 <h5 className="mt-3 font-semibold">Banking</h5>
                 <p className="text-sm text-slate-500">980+ Quizzes</p>
             </div>

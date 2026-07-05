@@ -8,6 +8,7 @@ import { CgNotes } from "react-icons/cg";
 import { LuTrophy } from "react-icons/lu";
 import Categories from "../Home/Categories";
 import { BsBank2 } from "react-icons/bs";
+import MockTests from "../Home/MockTests";
 
 const Home = () => {
   return (
@@ -52,6 +53,8 @@ const Home = () => {
       </div>
      
      <Categories />
+
+     <MockTests />
     </div>
   );
 };
