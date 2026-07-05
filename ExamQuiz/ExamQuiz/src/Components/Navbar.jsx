@@ -10,7 +10,7 @@ import Profile from '../assets/Profile.png'
 const Navbar = ({ isOpen, setIsOpen }) => {
 
   return (
-    <header className="relative flex items-center justify-around bg-white px-6 py-4 border border-slate-200 shadow-sm">
+    <header className="relative flex items-center justify-between bg-white px-6 py-4 border border-slate-200 shadow-sm">
 
       {/* Left Section */}
       <div className="flex items-center">

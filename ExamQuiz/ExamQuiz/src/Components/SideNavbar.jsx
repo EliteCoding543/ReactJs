@@ -1,6 +1,7 @@
 import React from "react";
 import { SlBookOpen } from "react-icons/sl";
 import { MdOutlineQuiz } from "react-icons/md";
+import King from '../assets/King.png'
 
 import {
   RiDashboardLine,
@@ -119,9 +120,12 @@ const SideNavbar = ({isOpen}) => {
       </nav>
 
       {/* Premium Card */}
-      <div className="m-4 rounded-2xl bg-linear-to-r from-blue-600 to-indigo-600 p-5 text-white shadow-xl">
+      <div className={`overflow-hidden transition-all duration-300  flex flex-col justify-center items-center bg-blue-600 rounded-2xl p-5 m-3 ${
+          isOpen ? "max-h-76 opacity-100 mt-4" : "max-h-0 opacity-0 mt-0"
+        }`}>
+        <img src={King} alt="Png"  className="w-15 h-15"/>
 
-        <h3 className="text-lg font-bold">
+        <h3 className="text-lg font-bold text-white">
           Upgrade to Premium 🚀
         </h3>
 

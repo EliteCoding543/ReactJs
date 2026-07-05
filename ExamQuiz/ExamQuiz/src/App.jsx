@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "./Components/Navbar";
 import SideNavbar from "./Components/SideNavbar";
+import Home from "./Components/Pages/Home";
 
 function App() {
   const [isOpen, setIsOpen] = useState(true);
@@ -17,9 +18,11 @@ function App() {
         <SideNavbar isOpen={isOpen} />
 
         <main className="flex-1 p-8">
-          Dashboard
+        <Home />
         </main>
       </div>
+
+      
 
     </div>
   );
