@@ -7,9 +7,9 @@ import { MdChevronRight } from "react-icons/md";
 
 const Categories = () => {
   return (
-      <div className="relative rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+      <div className=" w-full relative rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
            <MdChevronRight
-            className="absolute right-1 bottom-22 h-8 w-8 rounded-full bg-white p-1 text-slate-700 shadow-md"
+            className="absolute right-1 bottom-22 h-8 w-8 rounded-full bg-white p-1 text-slate-700 shadow-md cursor-pointer hover:bg-blue-600 hover:text-white z-10"
            />
         {/* Header */}
         <div className="flex items-center justify-between">

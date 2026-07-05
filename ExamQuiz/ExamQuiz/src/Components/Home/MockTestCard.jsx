@@ -36,7 +36,7 @@ const MockTestCard = ({
       </span>
 
       {/* Button */}
-      <button className="mt-auto rounded-xl border border-slate-200 py-2.5 font-semibold text-blue-600 transition hover:bg-blue-600 hover:text-white">
+      <button className="mt-auto rounded-xl border border-slate-200 py-2.5 font-semibold text-blue-600 transition hover:bg-blue-600 hover:text-white cursor-pointer">
         Start Test
       </button>
 

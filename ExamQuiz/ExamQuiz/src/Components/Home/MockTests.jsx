@@ -41,7 +41,7 @@ const mockTests = [
     },
 
     {
-        title: "UPSC Prelims Mock",
+        title: "UPSC Prelims Mock Tests",
         questions: 100,
         duration: "60 mins",
         difficulty : "Hard",
@@ -57,7 +57,7 @@ const MockTests = () => {
   return (
     <div className='relative rounded-3xl border border-slate-200 bg-white p-6'>
         <MdChevronRight
-            className="absolute right-1 bottom-22 h-8 w-8 rounded-full bg-white p-1 text-slate-700 shadow-md"
+            className="absolute right-1 bottom-40 h-8 w-8 rounded-full bg-white p-1 text-slate-700 shadow-md cursor-pointer hover:bg-blue-600 hover:text-white z-10"
         />
       <div className='flex justify-between items-center'>
         <h2 className='font-bold text-slate-900'>

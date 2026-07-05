@@ -18,12 +18,9 @@ function App() {
         <SideNavbar isOpen={isOpen} />
 
         <main className="flex-1 p-8">
-        <Home />
+          <Home />
         </main>
       </div>
-
-      
-
     </div>
   );
 }
