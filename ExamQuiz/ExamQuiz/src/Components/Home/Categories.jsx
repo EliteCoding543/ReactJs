@@ -2,24 +2,29 @@ import React from 'react'
 import { BsBank2 } from "react-icons/bs";
 import { FaTrainSubway } from "react-icons/fa6";
 import { AiOutlineFileProtect } from "react-icons/ai";
+import Flag from '../../assets/Flag.png'
+import { MdChevronRight } from "react-icons/md";
 
 const Categories = () => {
   return (
-      <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-
+      <div className="relative rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+           <MdChevronRight
+            className="absolute right-1 bottom-22 h-8 w-8 rounded-full bg-white p-1 text-slate-700 shadow-md"
+           />
         {/* Header */}
         <div className="flex items-center justify-between">
             <h2 className=" font-bold text-slate-900">
             Popular Categories
             </h2>
 
-            <a href="#" className="text-blue-600 font-medium hover:underline">
-            View All
+            <a href="#" className="text-blue-600 font-medium hover:underline flex gap-2 items-center transition-all duration-300 hover:-translate-y-1">
+                View All
+                <MdChevronRight />
             </a>
         </div>
 
         {/* Category Cards */}
-        <div className="mt-6 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-5">
+        <div className="mt-6 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-5">
 
             <div className="flex flex-col items-center justify-center rounded-2xl bg-blue-50 px-2 py-4 leading-8">
                 <BsBank2 className="text-4xl text-blue-600" />
@@ -43,6 +48,12 @@ const Categories = () => {
                 <AiOutlineFileProtect className='text-green-800 text-4xl' />
                 <h5 className="mt-3 font-semibold">UPSC</h5>
                 <p className="text-sm text-slate-500">650+ Quizzes</p>
+            </div>
+
+            <div className="flex flex-col items-center justify-center rounded-2xl bg-purple-50 p-6 leading-8">
+                <img className='h-10 w-10' src={Flag} alt="" />
+                <h5 className="mt-3 font-semibold">State PCS</h5>
+                <p className="text-sm text-slate-500">540+ Quizzes</p>
             </div>
 
         </div>
