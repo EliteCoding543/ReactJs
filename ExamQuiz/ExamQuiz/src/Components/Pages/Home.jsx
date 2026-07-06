@@ -9,6 +9,7 @@ import { LuTrophy } from "react-icons/lu";
 import Categories from "../Home/Categories";
 import { BsBank2 } from "react-icons/bs";
 import MockTests from "../Home/MockTests";
+import LatestQuizzes from "../Home/LatestQuizzes";
 
 const Home = () => {
   return (
@@ -55,6 +56,7 @@ const Home = () => {
      <Categories />
 
      <MockTests />
+     <LatestQuizzes />
     </div>
   );
 };

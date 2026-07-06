@@ -24,33 +24,33 @@ const Categories = () => {
         </div>
 
         {/* Category Cards */}
-        <div className="mt-6 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-5">
+        <div className="mt-6 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-5">
 
-            <div className="flex flex-col items-center justify-center rounded-2xl bg-blue-50 px-2 py-4 leading-8">
+            <div className="flex flex-col items-center justify-center rounded-2xl bg-blue-50 px-2 py-4 leading-8 border border-slate-200">
                 <BsBank2 className="text-4xl text-blue-600" />
                 <h5 className="mt-3 font-semibold">SSC</h5>
                 <p className="text-sm text-slate-500">1250+ Quizzes</p>
             </div>
 
-            <div className="flex flex-col items-center justify-center rounded-2xl bg-green-50 p-6 leading-8">
+            <div className="flex flex-col items-center justify-center rounded-2xl bg-green-50 p-6 leading-8 border border-slate-200">
                 <BsBank2 className="text-4xl text-green-700" />
                 <h5 className="mt-3 font-semibold">Banking</h5>
                 <p className="text-sm text-slate-500">980+ Quizzes</p>
             </div>
 
-            <div className="flex flex-col items-center justify-center rounded-2xl bg-orange-50 p-6 leading-8">
+            <div className="flex flex-col items-center justify-center rounded-2xl bg-orange-50 p-6 leading-8 border border-slate-200">
                 <FaTrainSubway className="text-4xl text-yellow-600" />
                 <h5 className="mt-3 font-semibold">Railway</h5>
                 <p className="text-sm text-slate-500">870+ Quizzes</p>
             </div>
 
-            <div className="flex flex-col items-center justify-center rounded-2xl bg-purple-50 p-6 leading-8">
+            <div className="flex flex-col items-center justify-center rounded-2xl bg-purple-50 p-6 leading-8 border border-slate-200">
                 <AiOutlineFileProtect className='text-green-800 text-4xl' />
                 <h5 className="mt-3 font-semibold">UPSC</h5>
                 <p className="text-sm text-slate-500">650+ Quizzes</p>
             </div>
 
-            <div className="flex flex-col items-center justify-center rounded-2xl bg-purple-50 p-6 leading-8">
+            <div className="flex flex-col items-center justify-center rounded-2xl bg-purple-50 p-6 leading-8 border border-slate-200">
                 <img className='h-10 w-10' src={Flag} alt="" />
                 <h5 className="mt-3 font-semibold">State PCS</h5>
                 <p className="text-sm text-slate-500">540+ Quizzes</p>
