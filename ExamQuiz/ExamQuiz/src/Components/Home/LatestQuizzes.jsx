@@ -57,7 +57,7 @@ const LatestQuizzes = () => {
   return (
     <div className="rounded-3xl border border-slate-200 bg-white p-6">
       <div className="flex items-center justify-between">
-        <h2 className="text-xl font-bold text-slate-900">
+        <h2 className=" font-bold text-slate-900">
           Latest Quizzes
         </h2>
 

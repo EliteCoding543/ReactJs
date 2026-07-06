@@ -4,20 +4,23 @@ import SideNavbar from "./Components/SideNavbar";
 import Home from "./Components/Pages/Home";
 
 function App() {
-  const [isOpen, setIsOpen] = useState(true);
+  // Default Sidebar Closed
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className= "min-h-screen bg-slate-50 ">
-
-      <Navbar
-        isOpen={isOpen}
-        setIsOpen={setIsOpen}
-      />
+    <div className="min-h-screen bg-slate-50">
+      {/* Navbar */}
+      <Navbar />
 
       <div className="flex">
-        <SideNavbar isOpen={isOpen} />
+        {/* Sidebar */}
+        <SideNavbar
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+        />
 
-        <main className="flex-1 p-8">
+        {/* Main Content */}
+        <main className="flex-1 p-8 overflow-y-auto">
           <Home />
         </main>
       </div>
