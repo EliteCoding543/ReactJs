@@ -9,7 +9,6 @@ import Profile from '../assets/Profile.png'
 import { GiFairyWings } from "react-icons/gi";
 
 const Navbar = ({ isOpen, setIsOpen }) => {
-
   return (
     <header className="relative flex items-center justify-between bg-white px-6 py-4 border border-slate-200 shadow-sm">
 
@@ -60,7 +59,8 @@ const Navbar = ({ isOpen, setIsOpen }) => {
       {/* Dark Light Button */}
       <div className="border-r border-slate-200 px-5">
           <div className="bg-slate-200 flex rounded-full  items-center p-2 gap-5 cursor-pointer">
-          <CiDark  className='text-2xl'/>
+          <CiDark  className='text-2xl'
+          />
           <MdOutlineLightMode className="text-2xl rounded-full bg-white text-blue-700 p-1"/>
         </div>
       </div>
