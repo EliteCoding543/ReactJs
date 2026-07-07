@@ -11,6 +11,7 @@ import { BsBank2 } from "react-icons/bs";
 import MockTests from "../Home/MockTests";
 import LatestQuizzes from "../Home/LatestQuizzes";
 import Learning from "../Home/Learning";
+import Results from "../Home/Results";
 
 const Home = () => {
   return (
@@ -59,6 +60,7 @@ const Home = () => {
      <MockTests />
      <LatestQuizzes />
      <Learning />
+     <Results />
     </div>
   );
 };
