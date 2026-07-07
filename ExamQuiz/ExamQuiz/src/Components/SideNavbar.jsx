@@ -79,7 +79,7 @@ const SideNavbar = ({ isOpen, setIsOpen }) => {
             : "max-h-0 opacity-0 p-0"
         }`}
       >
-        <div className="rounded-2xl bg-linear-to-r from-blue-600 via-blue-700 to-indigo-700 p-5 text-center text-white shadow-xl">
+       < div className="rhidden xl:block rounded-2xl bg-linear-to-r from-blue-600 via-blue-700 to-indigo-700 p-5 text-center text-white shadow-xl">
           <img
             src={King}
             alt="Premium"
