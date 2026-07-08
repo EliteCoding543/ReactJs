@@ -4,11 +4,15 @@ import { FaCartShopping } from "react-icons/fa6";
 import { FaHome } from "react-icons/fa";
 import { SiGoogledataproc } from "react-icons/si";
 import { IoIosContact } from "react-icons/io";
+import { FaCode } from "react-icons/fa";
 
 const Navbar = () => {
   return (
     <nav className="shadow-md px-10 py-4 flex justify-between bg-white">
-      <h1 className="text-2xl font-bold">Logo</h1>
+      <h1 className="text-2xl font-bold flex gap-2 items-center text-blue-600">
+        <FaCode  className="text-blue-700"/>
+        ShopEase
+        </h1>
 
       <ul className="flex items-center gap-6 font-bold">
         {/* Home */}

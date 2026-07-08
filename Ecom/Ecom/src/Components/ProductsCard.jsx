@@ -58,7 +58,7 @@ const ProductsCard = () => {
       {data.map((item) => (
         <div
           key={item.id}
-          className="w-72 shadow-lg rounded-lg p-4 flex flex-col items-center text-center border cursor-pointer hover:-translate-y-3 hover:bg-sky-50 transition duration-300"
+          className="w-72 shadow-lg rounded-xl p-4 flex flex-col items-center text-center border border-slate-300 cursor-pointer hover:-translate-y-3 hover:bg-sky-50 transition duration-300"
         >
           <h1 className="font-bold">{item.title}</h1>
 
@@ -69,7 +69,7 @@ const ProductsCard = () => {
           />
 
           <p className="text-gray-500 text-sm h-12">
-            {item.description.slice(0, 60)}...
+            {item.description.slice(0, 60)}..
           </p>
 
           <div className="flex justify-between w-full mt-3">
