@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
+import { BsCurrencyRupee } from "react-icons/bs";
 
 const ApiKey = "https://dummyjson.com/products";
 
@@ -72,17 +73,18 @@ const ProductsCard = () => {
           </p>
 
           <div className="flex justify-between w-full mt-3">
-            <p className="font-bold text-fuchsia-500">
-              ₹ {item.price}
+            <p className="font-bold text-slate-800 flex items-center">
+              <BsCurrencyRupee className="font-bold text-slate-800" />
+              {item.price}
             </p>
 
-            <p className="flex items-center gap-1 text-amber-500 font-bold">
-              <FaStar />
+            <p className="flex items-center gap-1  font-bold text-slate-800">
+              <FaStar className="text-amber-500" />
               {item.rating}
             </p>
           </div>
 
-          <button className="mt-4 border border-blue-600 px-6 py-2 rounded-2xl font-semibold text-slate-800 hover:bg-blue-600 hover:text-white transition duration-300">
+          <button className="mt-4 border border-blue-600 px-6 py-2 rounded-2xl font-semibold text-blue-600 hover:bg-blue-600 hover:text-white transition duration-300">
             Add Cart
           </button>
         </div>
