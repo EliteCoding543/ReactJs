@@ -8,7 +8,7 @@ import { FaCode } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="shadow-md px-10 py-4 flex justify-between bg-white">
+    <nav className="shadow-md px-10 py-4 flex justify-between bg-white border-b border-b-blue-100">
       <h1 className="text-2xl font-bold flex gap-2 items-center text-blue-600">
         <FaCode  className="text-blue-700"/>
         ShopEase
@@ -20,7 +20,7 @@ const Navbar = () => {
           <NavLink to="/">
             {({ isActive }) => (
               <div
-                className={`flex items-center gap-2 border border-blue-600 px-4 py-2 rounded-xl transition duration-300 ${
+                className={`flex items-center gap-2 border border-blue-200 px-4 py-2 rounded-xl transition duration-300 ${
                   isActive
                     ? "bg-blue-600 text-white"
                     : "text-slate-600 hover:bg-blue-600 hover:text-white"
@@ -38,7 +38,7 @@ const Navbar = () => {
           <NavLink to="/about">
             {({ isActive }) => (
               <div
-                className={`flex items-center gap-2 border border-blue-600 px-4 py-2 rounded-xl transition duration-300 ${
+                className={`flex items-center gap-2 border border-blue-200 px-4 py-2 rounded-xl transition duration-300 ${
                   isActive
                     ? "bg-blue-600 text-white"
                     : "text-slate-600 hover:bg-blue-600 hover:text-white"
@@ -56,7 +56,7 @@ const Navbar = () => {
           <NavLink to="/products">
             {({ isActive }) => (
               <div
-                className={`flex items-center gap-2 border border-blue-600 px-4 py-2 rounded-xl transition duration-300 ${
+                className={`flex items-center gap-2 border border-blue-200 px-4 py-2 rounded-xl transition duration-300 ${
                   isActive
                     ? "bg-blue-600 text-white"
                     : "text-slate-600 hover:bg-blue-600 hover:text-white"
@@ -74,7 +74,7 @@ const Navbar = () => {
           <NavLink to="/contact">
             {({ isActive }) => (
               <div
-                className={`flex items-center gap-2 border border-blue-600 px-4 py-2 rounded-xl transition duration-300 ${
+                className={`flex items-center gap-2 border border-blue-200 px-4 py-2 rounded-xl transition duration-300 ${
                   isActive
                     ? "bg-blue-600 text-white"
                     : "text-slate-600 hover:bg-blue-600 hover:text-white"
