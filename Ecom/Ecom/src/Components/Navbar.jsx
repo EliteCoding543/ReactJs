@@ -5,8 +5,23 @@ import { FaHome } from "react-icons/fa";
 import { SiGoogledataproc } from "react-icons/si";
 import { IoIosContact } from "react-icons/io";
 import { FaCode } from "react-icons/fa";
+import { useState } from "react";
+import { useEffect } from "react";
 
-const Navbar = () => {
+const Navbar = ({cart}) => {
+  console.log(cart)
+  const[totalItems, setTotalItems] = useState(0)
+  useEffect(() => {
+    let temp = 0;
+
+    for(let item of cart){
+        temp += item.q;
+    }
+
+    setTotalItems(temp);
+
+  },[cart])
+
   return (
     <nav className="shadow-md px-10 py-4 flex justify-between bg-white border-b border-b-blue-100">
       <h1 className="text-2xl font-bold flex gap-2 items-center text-blue-600">
@@ -44,8 +59,11 @@ const Navbar = () => {
                     : "text-slate-600 hover:bg-blue-600 hover:text-white"
                 }`}
               >
-                <FaCartShopping />
+              <FaCartShopping />
                 Cart
+                {totalItems > 0 && <span>
+                  {totalItems}
+                  </span>}
               </div>
             )}
           </NavLink>

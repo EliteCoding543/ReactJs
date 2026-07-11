@@ -1,12 +1,13 @@
 import React from 'react'
-import ProductsCard from '../Components/ProductsCard'
+import ProductsCard from "../Components/ProductsCard";
 
-const Products = () => {
+const Products = ({ cart, setCart }) => {
   return (
-    <div>
-      <ProductsCard />
-    </div>
-  )
-}
+    <ProductsCard
+      cart={cart}
+      setCart={setCart}
+    />
+  );
+};
 
-export default Products
+export default Products;

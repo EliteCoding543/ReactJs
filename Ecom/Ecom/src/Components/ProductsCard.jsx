@@ -4,7 +4,7 @@ import { BsCurrencyRupee } from "react-icons/bs";
 
 const ApiKey = "https://dummyjson.com/products";
 
-const ProductsCard = () => {
+const ProductsCard = ({info, setCart, cart}) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -54,8 +54,13 @@ const ProductsCard = () => {
 
   // Success State
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 p-10">
-      {data.map((item) => (
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 p-10">
+    {data.map((item) => {
+      const existingItem = cart.find(
+        (product) => product.id === item.id
+      );
+
+      return (
         <div
           key={item.id}
           className="w-72 shadow-lg rounded-xl p-4 flex flex-col items-center text-center border border-slate-300 cursor-pointer hover:-translate-y-3 hover:bg-sky-50 transition duration-300"
@@ -69,28 +74,44 @@ const ProductsCard = () => {
           />
 
           <p className="text-gray-500 text-sm h-12">
-            {item.description.slice(0, 60)}..
+            {item.description.slice(0, 60)}...
           </p>
 
           <div className="flex justify-between w-full mt-3">
             <p className="font-bold text-slate-800 flex items-center">
-              <BsCurrencyRupee className="font-bold text-slate-800" />
+              <BsCurrencyRupee />
               {item.price}
             </p>
 
-            <p className="flex items-center gap-1  font-bold text-slate-800">
+            <p className="flex items-center gap-1 font-bold text-slate-800">
               <FaStar className="text-amber-500" />
               {item.rating}
             </p>
           </div>
 
-          <button className="mt-4 border border-blue-600 px-6 py-2 rounded-2xl font-semibold text-blue-600 hover:bg-blue-600 hover:text-white transition duration-300">
+          <button
+            onClick={() => {
+              if (existingItem) {
+                const updatedCart = cart.map((product) =>
+                  product.id === item.id
+                    ? { ...product, q: product.q + 1 }
+                    : product
+                );
+
+                setCart(updatedCart);
+              } else {
+                setCart([...cart, { ...item, q: 1 }]);
+              }
+            }}
+            className="relative mt-4 border border-blue-600 px-6 py-2 rounded-2xl font-semibold text-blue-600 hover:bg-blue-600 hover:text-white transition duration-300"
+          >
             Add Cart
           </button>
         </div>
-      ))}
-    </div>
-  );
+      );
+    })}
+  </div>
+);
 };
 
 export default ProductsCard;
