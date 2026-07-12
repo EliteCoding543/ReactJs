@@ -78,7 +78,7 @@ const Navbar = ({cart}) => {
                 }`}
               >
                 <IoIosContact />
-                Contact
+                Profile
               </div>
             )}
           </NavLink>
