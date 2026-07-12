@@ -48,27 +48,6 @@ const Navbar = ({cart}) => {
           </NavLink>
         </li>
 
-        {/* Cart */}
-        <li>
-          <NavLink to="/about">
-            {({ isActive }) => (
-              <div
-                className={`flex items-center gap-2 border border-blue-200 px-4 py-2 rounded-xl transition duration-300 ${
-                  isActive
-                    ? "bg-blue-600 text-white"
-                    : "text-slate-600 hover:bg-blue-600 hover:text-white"
-                }`}
-              >
-              <FaCartShopping />
-                Cart
-                {totalItems > 0 && <span>
-                  {totalItems}
-                  </span>}
-              </div>
-            )}
-          </NavLink>
-        </li>
-
         {/* Products */}
         <li>
           <NavLink to="/products">
@@ -100,6 +79,29 @@ const Navbar = ({cart}) => {
               >
                 <IoIosContact />
                 Contact
+              </div>
+            )}
+          </NavLink>
+        </li>
+
+        {/* Cart */}
+        <li>
+          <NavLink to="/cart">
+            {({ isActive }) => (
+              <div
+                className={`flex items-center gap-2 border border-blue-200 px-4 py-2 rounded-xl transition duration-300 ${
+                  isActive
+                    ? "bg-blue-600 text-white"
+                    : "text-slate-600 hover:bg-blue-600 hover:text-white"
+                }`}
+              >
+              <div className="flex relative items-center gap-2">
+                <FaCartShopping />
+                Cart
+                {totalItems > 0 && <span className="bg-red-500 h-7 w-7 flex items-center rounded-xl text-sm justify-center absolute -top-5 left-15 text-white">
+                  {totalItems}
+                  </span>}
+              </div>
               </div>
             )}
           </NavLink>

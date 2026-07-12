@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { BsCurrencyRupee } from "react-icons/bs";
+import toast from "react-hot-toast";
 
 const ApiKey = "https://dummyjson.com/products";
 
@@ -102,6 +103,8 @@ const ProductsCard = ({info, setCart, cart}) => {
               } else {
                 setCart([...cart, { ...item, q: 1 }]);
               }
+
+              toast.success(`${item.title} add to Cart`)
             }}
             className="relative mt-4 border border-blue-600 px-6 py-2 rounded-2xl font-semibold text-blue-600 hover:bg-blue-600 hover:text-white transition duration-300"
           >

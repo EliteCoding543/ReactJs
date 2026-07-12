@@ -7,18 +7,20 @@ import Profile from "./Pages/Profile";
 import Home from "./Pages/Home";
 import Landing from "./Pages/Landing";
 import { useState } from "react";
+import {Toaster} from 'react-hot-toast'
 // import ProductsCard  from "./Components/ProductsCard";
 
 const App = () => {
   const[cart, setCart] = useState([]);
   return (
     <>
+      <Toaster />
       <Navbar  cart={cart}/>
 
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/products" element={<Products cart={cart} setCart={setCart} />} />
-        <Route path="/cart" element={<Cart cart={cart}/>} />
+        <Route path="/cart" element={<Cart cart={cart} setCart={setCart}/>} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
 
