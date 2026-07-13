@@ -52,7 +52,6 @@ const Navbar = () => {
 
           {/* Theme */}
           <div className="hidden sm:flex items-center gap-2 rounded-full bg-slate-200 p-1">
-            <CiDark className="cursor-pointer text-2xl rounded-full p-1 hover:bg-white transition" />
 
             <MdOutlineLightMode className="cursor-pointer rounded-full bg-white p-1 text-2xl text-blue-700 shadow-sm transition" />
           </div>
