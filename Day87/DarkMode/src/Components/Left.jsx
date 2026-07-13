@@ -6,9 +6,9 @@ import { MyContext } from '../App'
 const Left = () => {
   const {text , setText, dark, setDark} = useContext(MyContext)
   return (
-    <div className={`m-10 flex w-full ${dark ? "bg-black border-yellow-300 border-5" : "bg-white border"}`}>
+    <div className={`m-10 flex w-full ${dark ? "bg-gray-800 border-yellow-300 border-5 transition duration-300" : "bg-white border"}`}>
       <div className='w-1/2 flex justify-center items-center'>
-        <input className={`w-1/2 h-10 border ${dark ? "border border-slate-50" : "border"}`} type="text" 
+        <input className={`w-1/2 h-10 border ${dark ? "border border-slate-50 transition duration-300 text-white" : "border"}`} type="text" 
          onChange={(e) => setText(e.target.value)}
         />
     </div>
